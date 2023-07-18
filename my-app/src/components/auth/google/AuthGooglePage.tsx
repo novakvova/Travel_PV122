@@ -4,7 +4,7 @@ const AuthGooglePage = () => {
 
     const handleGoogleComplete = (resp: any) => {
         const {credential} = resp;
-        //console.log("-------Google auth----------- ", credential)
+        console.log("-------Google auth----------- ", credential)
     }
 
     useEffect(() => {
