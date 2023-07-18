@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using System.Web.Providers.Entities;
 using TravelApi.Data.Entity;
 
 namespace TravelApi.Data
