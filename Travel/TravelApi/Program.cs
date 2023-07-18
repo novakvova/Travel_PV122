@@ -17,19 +17,6 @@ builder.Services.AddDbContext<AppEFContext>(options =>
 options.UseNpgsql(builder.Configuration.GetConnectionString("MyConnectionDB")));
 
 
-builder.Services.AddAuthentication(options =>
-{
-    options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-    options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-    options.DefaultChallengeScheme = GoogleDefaults.AuthenticationScheme;
-})
-.AddCookie()
-.AddGoogle(options =>
-{
-    options.ClientId = "YOUR_CLIENT_ID";
-    options.ClientSecret = "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";
-    options.CallbackPath = "/signin-google";
-});
 
 var app = builder.Build();
 

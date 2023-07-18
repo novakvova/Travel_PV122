@@ -3,32 +3,35 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Google.Apis.Auth;
 
-
+public class GoogleLoginViewModel
+{
+    public string Token { get; set; }
+}
 
 [ApiController]
 [Route("api/[controller]")]
 public class AuthController : ControllerBase
 {
-    [HttpGet("google")]
-    public IActionResult GoogleLogin()
+   
+
+    [HttpPost("googleauth")]
+    public async Task<IActionResult> GoogleResponse([FromForm] GoogleLoginViewModel model)
     {
-        var properties = new AuthenticationProperties
+        string clientID = "763864234936-s953ounakf8bemdaqva8hlao2dai2dj5.apps.googleusercontent.com";
+        var setting = new GoogleJsonWebSignature.ValidationSettings()
         {
-            RedirectUri = Url.Action(nameof(GoogleResponse), "Auth")
+            Audience = new List<string>() { clientID }
         };
+        var payload = await GoogleJsonWebSignature.ValidateAsync(model.Token, setting);
 
-        return Challenge(properties, GoogleDefaults.AuthenticationScheme);
-    }
+        if(payload == null)
+        {
+            return BadRequest();
+        }
 
-    [HttpGet("google/response")]
-    public async Task<IActionResult> GoogleResponse()
-    {
-        var result = await HttpContext.AuthenticateAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-
-    
-
-        return Ok();
+        return Ok(payload.Email);
     }
 
     // Другие методы вашего контроллера...
