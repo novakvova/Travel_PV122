@@ -12,7 +12,7 @@ public class GoogleLoginViewModel
 
 [ApiController]
 [Route("api/[controller]")]
-public class AuthController : ControllerBase
+public class GoogleAuthController : ControllerBase
 {
    
 
@@ -34,5 +34,5 @@ public class AuthController : ControllerBase
         return Ok(payload.Email);
     }
 
-    // Другие методы вашего контроллера...
+    
 }
