@@ -20,6 +20,7 @@ namespace TravelApi.Data.Entity
 
         [ForeignKey("Parent")]
         public int? ParentId { get; set; }
+        public DateTime DateCreated { get; set; }
         public virtual CategoryEntity Parent { get; set; }
 
         public virtual ICollection<CategoryEntity> Children { get; set; }

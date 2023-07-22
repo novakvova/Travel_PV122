@@ -17,11 +17,12 @@ namespace TravelApi.Data.Entity
         public bool IsHot { get; set; }
         public DateTime DateStart { get; set; }
         public DateTime DateFinish { get; set; }
+        public DateTime DateCreated { get; set; }
 
         [ForeignKey("Category")]
         public int CategoryId { get; set; }
         public virtual CategoryEntity Category { get; set; }
-        public virtual ICollection<VacationImagesEntity> ProductImages { get; set; }
+        public virtual ICollection<VacationImagesEntity> VacationImages { get; set; }
     }
 }
 

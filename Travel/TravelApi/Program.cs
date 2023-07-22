@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.FileProviders;
 using TravelApi.Data;
 using TravelApi.Data.Entity.Identity;
 
@@ -33,6 +34,16 @@ options.UseNpgsql(builder.Configuration.GetConnectionString("MyConnectionDB")));
 
 var app = builder.Build();
 
+var dir = Path.Combine(Directory.GetCurrentDirectory(), "images");
+if(!Directory.Exists(dir))
+    Directory.CreateDirectory(dir);
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = new PhysicalFileProvider(dir),
+    RequestPath = "/images"
+});
+
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -40,9 +51,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+
+
 app.UseAuthentication();
 app.UseAuthorization();
 
+app.SeedData();
 app.MapControllers();
 
 app.Run();

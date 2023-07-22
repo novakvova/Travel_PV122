@@ -9,7 +9,7 @@ const AuthGooglePage = () => {
 
     useEffect(() => {
         window.google.accounts!.id.initialize({
-            client_id: "763864234936-s953ounakf8bemdaqva8hlao2dai2dj5.apps.googleusercontent.com",
+            client_id: "1092898852465-68g9krvqvqh66uf3o3abbm2av1sgqhtk.apps.googleusercontent.com",
             callback: handleGoogleComplete
         });
 
