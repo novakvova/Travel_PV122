@@ -1,5 +1,3 @@
-using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -11,6 +9,7 @@ using System.Text;
 using TravelApi.Abstract;
 using TravelApi.Data;
 using TravelApi.Data.Entity.Identity;
+using TravelApi.Mapper;
 using TravelApi.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -86,6 +85,7 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
+builder.Services.AddAutoMapper(typeof(AppMapProfile));
 
 ///////////JWT TOKEN SERVICE-------END/////////
 
