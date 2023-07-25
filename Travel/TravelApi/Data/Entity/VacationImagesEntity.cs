@@ -16,6 +16,6 @@ namespace TravelApi.Data.Entity
             [ForeignKey("Vacation")]
             public int? VacationId { get; set; }
             public virtual VacationEntity Vacation { get; set; }
-        
+            
     }
 }

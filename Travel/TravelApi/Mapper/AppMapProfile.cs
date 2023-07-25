@@ -14,7 +14,10 @@ namespace TravelApi.Mapper
             CreateMap<CategoryCreateViewModel, CategoryEntity>()
               .ForMember(x => x.ParentId, opt => opt.MapFrom(x => x.ParentId == 0 ? null : x.ParentId))
               .ForMember(x => x.Image, opt => opt.Ignore());
-        }
 
+
+            CreateMap<VacationImagesEntity, VacationImageItemViewModel>();
+        }
+        
     }
 }

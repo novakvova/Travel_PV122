@@ -9,4 +9,9 @@ namespace TravelApi.Models
     {
         public IFormFile Image { get; set; }
     }
+    public class VacationImageItemViewModel
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+    }
 }

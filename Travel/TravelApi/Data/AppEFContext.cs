@@ -17,7 +17,7 @@ namespace TravelApi.Data
 
         }
         public DbSet<CategoryEntity> Categories { get; set; }
-        public DbSet<VacationImagesEntity> Vacation { get; set; }
+        public DbSet<VacationEntity> Vacation { get; set; }
         public DbSet<VacationImagesEntity> VacationImages { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
