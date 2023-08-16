@@ -22,7 +22,7 @@ namespace TravelApi.Controllers
         {
             _appEFContext = appEFContext;
             _configuration = configuration;
-            
+            _mapper = mapper;
         }
         [HttpGet("list")]
         public async Task<IActionResult> List()
