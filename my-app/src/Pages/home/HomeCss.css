@@ -1,0 +1,87 @@
+.meny{
+    top:0px;
+    left: 0px;
+    position: fixed;  
+    width: 100%;
+    height: 55px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 3px 2px rgba(70, 69, 69, 0.2);
+}
+.menyLinks{
+    position: fixed; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+    color: black;
+    text-decoration:none;
+}
+.me1{
+    
+    top: 20px;
+    right:1140px; 
+    
+}
+.me2{
+    top: 20px;
+    right:1050px; 
+}
+.me3{
+    top: 20px;
+    right:960px; 
+}
+.me4{
+    top: 20px;
+    right:860px; 
+}
+.me5{
+    top: 20px;
+    right:730px; 
+}
+.me6{
+    top: 20px;
+    right:620px;
+    
+}
+
+.joinUp{
+    position: fixed;  
+    width: 6%;
+   
+    left: 390px;
+
+}
+.block{
+    width: 1879px; 
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    opacity:70%;
+    top: 556px;
+}
+.Poshuk{
+    width: 160px;
+    height: 50px;
+    background-color: white;
+    box-shadow: 2px 2px 3px 2px rgba(70, 69, 69, 0.2);
+    border-radius:30px;
+    left: 510px;
+    top: 30px;
+    position: absolute;
+}
+.krug{
+    background-color: green;
+    width: 35px;
+    height: 35px;
+    border-radius:30px;
+    position: absolute;
+    left:7px;
+    top:7px;
+}
+.PoshukLink{
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    position: absolute;
+    left:45px;
+    top:10px;
+    text-decoration:none;
+}

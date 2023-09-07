@@ -1,12 +1,14 @@
 import './App.css'
-import AuthGooglePage from "./components/auth/google/AuthGooglePage.tsx";
-
+import HomePage from "./Pages/home/HomePage";
+import Slaider from "./components/Slaider";
 function App() {
 
 
   return (
     <>
-      <AuthGooglePage/>
+      <Slaider></Slaider>
+      <HomePage></HomePage>
+      
     </>
   )
 }
