@@ -8,9 +8,63 @@
     height: 600px;
 }
 .bilshe{
-    width: 200px;
-    height: 50px;
-    background-color: gray;
+    width: 160px;
+    height: 40px;
+    background-color: rgba(235, 234, 234,50%);
+   left:865px;
+   bottom:230px;
+   position:relative;
+
    
-    position: absolute;
+
+}
+.bilshe:hover{
+   
+    background-color: rgb(34, 34, 34);
+  transition: 1s;
+ opacity: 50%;
+}
+.bilsheLink{
+    width: 160px;
+    height: 45px;
+
+   position:absolute;
+   text-decoration: none;
+   color: white;
+   text-align: center;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   padding-top:7px;
+   
+}
+.carousel-indicators{
+    
+    bottom:80px;
+}
+.carousel-control-prev{
+background-color: rgb(65, 65, 65);
+width: 60px;
+height: 60px;
+border-radius: 30px;
+left:30px;
+top: 270px;
+}
+.carousel-control-prev:hover{
+    background-color: rgb(255, 102, 0);
+    transition: 0.3;
+    opacity: 50%;
+}
+
+.carousel-control-next{
+    background-color: rgb(65, 65, 65);
+width: 60px;
+height: 60px;
+border-radius: 30px;
+right:30px;
+top: 270px;
+}
+
+.carousel-control-next:hover{
+    background-color: rgb(255, 102, 0);
+    transition: 0.3;
+    opacity: 50%;
 }

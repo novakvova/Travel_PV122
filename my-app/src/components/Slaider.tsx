@@ -21,7 +21,10 @@ function App() {
             alt="First slide"
             
           />
-          <a className="bilshe">Дізнатись більше</a>
+          <div  className='bilshe'>
+          <a  className="bilsheLink">Дізнатись більше</a>
+          </div>
+          
         </Carousel.Item>
         <Carousel.Item>
         <img
@@ -30,6 +33,9 @@ function App() {
             alt="First slide"
             
           />
+          <div  className='bilshe'>
+          <a  className="bilsheLink">Дізнатись більше</a>
+          </div>
         </Carousel.Item>
         <Carousel.Item>
         <img
@@ -38,6 +44,9 @@ function App() {
             alt="First slide"
             
           />
+          <div  className='bilshe'>
+          <a  className="bilsheLink">Дізнатись більше</a>
+          </div>
         </Carousel.Item>
         <Carousel.Item>
         <img
@@ -46,6 +55,9 @@ function App() {
             alt="First slide"
             
           />
+          <div  className='bilshe'>
+          <a  className="bilsheLink">Дізнатись більше</a>
+          </div>
         </Carousel.Item>
         <Carousel.Item>
         <img
@@ -54,6 +66,9 @@ function App() {
             alt="First slide"
             
           />
+          <div  className='bilshe'>
+          <a  className="bilsheLink">Дізнатись більше</a>
+          </div>
         </Carousel.Item>
       </Carousel>
     </div>
