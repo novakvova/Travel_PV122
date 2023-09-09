@@ -59,9 +59,7 @@ const HomePage = () => {
           </div>
           <div className='prolet'></div>
         
-          <div className="chasVid">
-            <a  className='perev'>Час прильоту</a>
-          </div>
+          
           
          
           
