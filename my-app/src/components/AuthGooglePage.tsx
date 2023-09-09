@@ -22,6 +22,7 @@ const AuthGooglePage = () => {
                 width: "40"
                 //text: "signin",
                 //locale: "uk-ua"
+            
             });
     },[]);
 

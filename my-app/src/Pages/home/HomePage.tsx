@@ -3,6 +3,7 @@ import joinUP from '../../assets/joinup.png'
 import dzvin from '../../assets/dzvin.png'
 import star from '../../assets/star.png'
 import vidi from '../../assets/vidi.png'
+
 const HomePage = () => {
 
     return (
@@ -58,7 +59,12 @@ const HomePage = () => {
           </div>
           <div className='prolet'></div>
         
-        
+          <div className="chasVid">
+            <a  className='perev'>Час прильоту</a>
+          </div>
+          
+         
+          
       </>
     );
 }

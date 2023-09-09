@@ -16,7 +16,7 @@
 
 }
 .block{
-    width: 1879px; 
+    width: 100%;
     height: 100px;
     background-color: rgba(0, 0, 0 , 70%);
     position: absolute;
@@ -216,8 +216,9 @@ left: 650px;
 .prolet{
     position: absolute;
     width: 100%;
-    background-color: rgb(245, 244, 244);
+    background-color: rgb(252, 249, 249);
     height: 100px;
     box-shadow: 1px 1px 1px 1px rgba(70, 69, 69, 0.2);
     top: 730px;
 }
+
